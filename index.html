@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container" style="background-color: darkblue;">
+        <p class="text-center text-white fw-bold h1">Weather-Dashboard</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="fw-bold">Search City:</p>
+                <div class="input-group">
+                    <span class="input-group-text">City</span>
+                    <input type="text" label="city" class="form-control city-input">
+                    <div class="d-grid col-12 mx-auto">
+                        <button class="btn btn-primary" type="button" id="search-button">Search</button>
+                    </div>
+                </div>
+
+                <div id="previous-searches"></div>
+            </div>
+
+            <div class="col-md-8">
+                <div id="current-weather">
+                    <p id="cityName" class="d-inline fw-bold"></p>
+                    <p id="date" class="d-inline fw-bold"></p>
+                    <p id="temp"></p>
+                    <p id="windspeed"></p>
+                    <p id="humidity"></p>
+                </div>
+
+                <div class="container" id="weatherForecast">
+                    <div class="row row-cols-1 row-cols-md-4" id="forecastRow">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
