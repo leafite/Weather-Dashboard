@@ -1,9 +1,9 @@
 .weatherForecast-item {
-    padding: 10px; /* Adjust the padding as needed */
+    padding: 10px; 
 }
 
 #forecastRow .col {
-    margin-bottom: 10px; /* Adjust the margin as needed */
+    margin-bottom: 10px; 
 }
 
 *,
